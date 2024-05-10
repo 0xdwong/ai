@@ -39,7 +39,7 @@ function _setDefaultOptions(options = {}) {
     const { prompt, model, temperature } = options;
 
     if (!prompt) options.prompt = process.env.prompt || 'You are a helpful assistant.';
-    if (!model) options.model = process.env.MODEL || 'gpt-3.5-turbo-1106';
+    if (!model) options.model = process.env.MODEL || 'gpt-3.5-turbo';
     if (!temperature) options.temperature = process.env.TEMPERATE || 1;
 
     return options
